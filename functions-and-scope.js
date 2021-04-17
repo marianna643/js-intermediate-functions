@@ -16,18 +16,9 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6,];
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 6
-let count = 0;
-function cumLaude () {
-    for (let i = 0; i < grades.length; i++){
-        if (grades[i] >= 8){
-            count++;
-        }
-    }
-         return "Het aantal Cum Laude studenten is: " + count;
-
-}
-
-console.log (cumLaude());
+console.log ("Hoe kan ik iedere waarde van de array checken op deze conditie? Antwoord: for-loop + if statement");
+console.log ("Hoe zorg ik ervoor dat dit ook werkt wanneer de array 100 entries bevat? Antwoord: array length");
+console.log ("Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan bijhouden? Antwoord: count variabel ");
 /*  1b: Omschrijven tot een herbruikbare functie   */
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
 // Zorg ervoor dat jouw functie ook werkt als we een andere array met eindcijfers willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
@@ -38,9 +29,18 @@ console.log (cumLaude());
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
 
+function cumLaude () {
+    let count = 0;
+    for (let i = 0; i < grades.length; i++){
+        if (grades[i] >= 8){
+            count++;
+        }
+    }
+    return "Het aantal Cum Laude studenten is: " + count;
 
+}
 
-
+console.log (cumLaude());
 /* Opdracht  2: Gemiddeld cijfer */
 
 /* 2a: Script schrijven  */
