@@ -13,12 +13,12 @@ function getEmailDomain(email){
     console.log("Email:",email);
     const index = email.indexOf("@");
     const domain = email.substring (index+1, email.length);
-    console.log("Domain:",domain);
+    return "Domain: "+ domain;
 }
 
-getEmailDomain("n.eeken@novi-education.nl");
-getEmailDomain("t.mellink@novi.nl");
-getEmailDomain("a.wiersma@outlook.com");
+console.log(getEmailDomain("n.eeken@novi-education.nl"));
+console.log(getEmailDomain("t.mellink@novi.nl"));
+console.log(getEmailDomain("a.wiersma@outlook.com"));
 
 
 /* Opdracht  2 */
