@@ -31,7 +31,7 @@ console.log ("Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de 
 
 function cumLaude () {
     let count = 0;
-    for (let i = 0; i < grades.length; i++){
+    for (let i = 0; i < grades.length; i++) {
         if (grades[i] >= 8){
             count++;
         }
@@ -96,7 +96,9 @@ console.log(averageGarde());
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 9
-
+console.log ("Hoe kan ik iedere waarde van de array langsgaan? Antwoord: for-loop ");
+console.log ("Op welke conditie moet ik checken? Antwoord: de volgende waarde in de array zijn groter dan de waardes die worden bekeken ");
+console.log ("Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de conditie voldoet, ik dit ergens kan opslaan? Antwoord: highestGrade variabel ");
 
 /* 3b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd highestGrade, die een array van cijfers verwacht (zoals grades) en het hoogste cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 3a.
@@ -107,3 +109,14 @@ console.log(averageGarde());
 // highestGrade(grades) geeft 9
 // highestGrade([6, 4, 5]) geeft 6
 // highestGrade([8, 9, 4, 6, 10]) geeft 10
+function highestGrade(){
+    let highestNumber = 0;
+    for (let i = 0; i < grades.length; i++) {
+        if (grades[i] > highestNumber) {
+            highestNumber = grades[i];
+        }
+    }
+    return "Het hoogste cijfer is: " + highestNumber;
+}
+
+console.log(highestGrade());
