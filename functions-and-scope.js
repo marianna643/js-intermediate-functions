@@ -23,7 +23,7 @@ function cumLaude () {
             count++;
         }
     }
-         return count;
+         return "Het aantal Cum Laude studenten is: " + count;
 
 }
 
