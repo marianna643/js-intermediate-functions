@@ -109,7 +109,7 @@ console.log ("Hoe zorgt ik ervoor dat wanneer ik een cijfer tegenkom die aan de 
 // highestGrade(grades) geeft 9
 // highestGrade([6, 4, 5]) geeft 6
 // highestGrade([8, 9, 4, 6, 10]) geeft 10
-function highestGrade(){
+function highestGrade() {
     let highestNumber = 0;
     for (let i = 0; i < grades.length; i++) {
         if (grades[i] > highestNumber) {
