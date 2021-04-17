@@ -52,7 +52,9 @@ console.log (cumLaude());
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 6.642857142857143
-
+console.log ("Hoe wordt een gemiddelde berekend? Antwoord: de som van de waarden / aantal waarden ");
+console.log ("Wat moet ik verzamelen uit de array van cijfers om uiteindelijk een gemiddelde te kunnen berekenen? Antwoord: waarden van de array ");
+console.log ("Hoe zorgt ik ervoor dat ik alle waardes uit de array kan langslopen, ook als de array wel 100 entries zou bevatten? Antwoord: array length  ");
 
 /* 2b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
@@ -64,10 +66,22 @@ console.log (cumLaude());
 // averageGrade([6, 4, 5]) geeft xxxx
 // averageGrade([8, 9, 4, 6, 10]) geeft xxxx
 
-
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
-// Tip: Google is your best friend!
+// Tip: Google is your best friend
+
+
+function averageGarde() {
+    let sum = 0;
+    for(let i = 0; i < grades.length; i++) {
+        sum += grades[i];
+    }
+    const avg = sum / grades.length;
+    let n = avg.toFixed(2);
+    return "Het gemiddelde cijfer van de studenten: " + avg  + " en het afgerond cijfer is: " +n + ".";
+}
+
+console.log(averageGarde());
 
 
 
